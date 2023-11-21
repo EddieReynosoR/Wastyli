@@ -1,9 +1,11 @@
 import { addPost } from "../api/posts"
 import { useFormik } from "formik" 
+import { useNavigate } from "react-router-dom";
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { toast } from "react-hot-toast";
 import Loader from "./Loader";
 import { useState } from "react";
+
 
 
 const AddPost = () => {
@@ -12,11 +14,14 @@ const AddPost = () => {
 
     const avatar = localStorage.getItem("avatar")
 
+    const navigate = useNavigate()
+
     const addPostMutation = useMutation({
         mutationFn: addPost,
         onSuccess: () => {
             queryClient.invalidateQueries('posts')
             toast.success('Post added')
+            navigate('/')
         },
         onError: () => {
             toast.error('Something went wrong')

@@ -89,7 +89,7 @@ const UserProfile = () => {
             </div>
 
             <p className="text-start ml-4 mt-4 text-xl font-bold ">
-        {user.username}
+        {user.name}
       </p>
 
       <div className="text-white text-start ml-4">

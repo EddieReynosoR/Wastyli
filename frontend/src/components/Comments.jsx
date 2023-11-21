@@ -69,7 +69,8 @@ const Comments = ({ post }) => {
                 {c.body}
                 </div>
 
-                <div className=''>
+                {c.user == localStorage.getItem('username') ?
+                (<div className=''>
                 <div 
                     className="">
                     <BsFillTrashFill  
@@ -83,7 +84,8 @@ const Comments = ({ post }) => {
                         size={25} />
                     {show && <EditComment c={c} close={() => setShow(false)} />}
                 </div>
-                </div> 
+                </div> ) : (<></>)
+                }
 
             </div>
             </div>
