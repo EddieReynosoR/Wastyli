@@ -1,0 +1,16 @@
+* {
+  position: relative;
+  list-style: none;
+}
+
+a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+a .text {
+  color: black;
+}/*# sourceMappingURL=login.css.map */

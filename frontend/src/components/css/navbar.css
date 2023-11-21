@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background: #f0eaea;
+  padding: 1rem 2rem;
+  height: 52px;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+}
+.navbar p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar .login {
+  margin-left: auto;
+  padding-right: 60px;
+}/*# sourceMappingURL=navbar.css.map */
